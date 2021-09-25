@@ -20,53 +20,36 @@ void display(int array[], int size)
     cout << endl;
 }
 
-void insertion_from_the_end(int array[], int size, int element_to_be_inserted)
+void insertion_from_the_end(int array[], int no_of_element, int element_to_be_inserted)
 {
-    int big_array[size + 1];
-    for (int i = 0; i < size; i++)
-    {
-        big_array[i] = array[i];
-    }
 
-    big_array[size] = element_to_be_inserted;
-    display(big_array, size + 1);
+    array[no_of_element] = element_to_be_inserted;
 }
 
 void insertion_of_element_from_beginning(int array[], int size, int element_to_be_inserted)
 {
-    int big_array[size + 1];
-    for (int i = 0; i < size; i++)
+    for (int i = element_to_be_inserted; i >= 0; i--)
     {
-        big_array[i + 1] = array[i];
+        array[i + 1] = array[i];
     }
 
-    big_array[0] = element_to_be_inserted;
-    display(big_array, size + 1);
+    array[0]=element_to_be_inserted;
 }
 
-void insertion_of_element_at_randompos(int array[],int size, int element_to_be_inserted,int position){
-    int big_array[size+1];
-    int pos;
-    for(int i=0;i<size+1;i++){
-        if(i!=position){
-            big_array[i]=array[i];
-        }else{
-            break;
-        }
+void insertion_of_element_at_randompos(int array[], int size, int element_to_be_inserted, int position)
+{
+    for (int i = size; i>= position ; i--)
+    {
+        array[i+1]=array[i];
     }
+    array[position]= element_to_be_inserted;
 
-    big_array[position]=element_to_be_inserted;
-    for(int i=position,j=position+1;i<size,j<size+1;i++,j++){
-        big_array[j]=array[i];
-    }
-
-    display(big_array,size+1);
 }
 int main()
 {
     int element_end_insert;
-    int choice, size,position;
-    int array[size];
+    int choice, position, no_of_elements, element_beg_insert;
+    int array[100];
     do
     {
 
@@ -74,7 +57,8 @@ int main()
         cout << "2. Insertion of the element from the end" << endl;
         cout << "3. Insertion of the element from the beginning" << endl;
         cout << "4. Insertion of the element in the random position" << endl;
-        cout << "5. exit" << endl;
+        cout << "5. display the array" << endl;
+        cout << "6. exit" << endl;
 
         cout << "Enter your choice: ";
         cin >> choice;
@@ -82,9 +66,9 @@ int main()
         {
         case 1:
         {
-            cout << "Enter the size of the  array: ";
-            cin >> size;
-            array_insertion(array, size);
+            cout << "Enter the Numbers of the elements that you want to insert";
+            cin >> no_of_elements;
+            array_insertion(array, no_of_elements);
 
             break;
         }
@@ -92,37 +76,41 @@ int main()
         {
             cout << "Enter the element that you want to insert in the end: ";
             cin >> element_end_insert;
-            insertion_from_the_end(array, size, element_end_insert);
-            size += 1;
+            insertion_from_the_end(array, no_of_elements, element_end_insert);
+            no_of_elements += 1;
 
             break;
         }
         case 3:
         {
-            cout << "Enter the element that you want to insert in the end: ";
-            cin >> element_end_insert;
-            insertion_of_element_from_beginning(array, size, element_end_insert);
-            size += 1;
+            cout << "Enter the element that you want to insert in the beginning: ";
+            cin >> element_beg_insert;
+            insertion_of_element_from_beginning(array, no_of_elements, element_beg_insert);
+            no_of_elements += 1;
 
             break;
         }
         case 4:
         {
-            cout<<"Enter the position you want to insert the Value: ";
-            cin>>position;
-            cout<<"Enter the element you want to insert in the array: ";
-            cin>>element_end_insert;
-            insertion_of_element_at_randompos(array,size,element_end_insert,position);
-
+            cout << "Enter the position you want to insert the Value: ";
+            cin >> position;
+            cout << "Enter the element you want to insert in the array: ";
+            cin >> element_end_insert;
+            insertion_of_element_at_randompos(array, no_of_elements, element_end_insert, position);
+            no_of_elements += 1;
 
             break;
         }
         case 5:
         {
+            display(array,no_of_elements);
+            break;
+        }
+        case 6:{
             break;
         }
         default:
             cout << "WRONG CHOICE!!!!!!!!!!!!!!!!!!!!!!";
         }
-    } while (choice != 5);
+    } while (choice != 6);
 }
