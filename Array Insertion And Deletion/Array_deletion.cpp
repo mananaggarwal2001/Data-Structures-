@@ -51,7 +51,7 @@ void deletion_Particular_element(int arr[], int element_to_be_deleted, int no_of
     }
     else
     {
-        cout << "Element not found!!!!!!!";
+        cout << "Element not found!!!!!!!"<<endl;
     }
 }
 
