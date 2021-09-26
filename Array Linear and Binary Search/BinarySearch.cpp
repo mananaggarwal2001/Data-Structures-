@@ -4,12 +4,13 @@ int main()
 {
     int mid, high, low, number, elementToBeSearch, position = 0;
     bool flag = false;
-    cout << "Enter the number of elements in the array:-";
+    cout << "Enter the number of elements in the array:- ";
     cin >> number;
     int array[number];
     for (int i = 0; i < number; i++)
     {
-        cin >> array[i];
+        cout<< "Enter the element "<<i+1<<" in the array ";
+        cin>>array[i];
     }
     int n = sizeof(array) / sizeof(array[0]);
     sort(array, array + n);
@@ -17,6 +18,7 @@ int main()
     {
         cout << array[i] << " ";
     }
+    cout<<endl;
 
     // cout<<"Enter the Element you want to search:-";
     // cin>> elementToBeSearch;
@@ -24,7 +26,7 @@ int main()
     high = number;
     cout << "Enter the Element to be searched:-";
     cin >> elementToBeSearch;
-    while (low < high)
+    while (low <= high)
     {
 
         mid = (high + low) / 2;
@@ -45,7 +47,7 @@ int main()
     }
     if (flag)
     {
-        cout << "Position of the element is:-" << position;
+        cout << "Position of the element is:- " << position<<endl;
     }else{
         cout<<"Element Not Found";
     }

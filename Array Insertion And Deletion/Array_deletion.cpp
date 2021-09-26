@@ -14,7 +14,7 @@ void display_Array(int arr[], int no_of_elements)
     {
         cout << arr[i] << " ";
     }
-    cout<<endl;
+    cout << endl;
 }
 
 void deletion_beginning(int arr[], int no_of_elements)
@@ -51,7 +51,7 @@ void deletion_Particular_element(int arr[], int element_to_be_deleted, int no_of
     }
     else
     {
-        cout << "Element not found!!!!!!!"<<endl;
+        cout << "Element not found!!!!!!!" << endl;
     }
 }
 
