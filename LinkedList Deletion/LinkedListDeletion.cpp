@@ -33,7 +33,7 @@ void NodeClass :: Message(){
     }
 }
 
-void NodeClass ::Deleting_the_node_of_given_position()
+void NodeClass ::Deleting_the_node_of_given_position() // for deleting the element in the given position.
 {
     int position;
     cout << "Enter the position for which you want to delete the node: ";
@@ -65,7 +65,7 @@ void NodeClass ::Deleting_the_node_of_given_position()
     }
 }
 
-void NodeClass ::Deleting_the_node_of_given_value()
+void NodeClass ::Deleting_the_node_of_given_value() // for deleting the node at the given value.
 {
     int value;
     bool flag = false;
@@ -111,7 +111,7 @@ void NodeClass ::Deleting_the_node_of_given_value()
     }
 }
 
-void NodeClass ::Deleting_the_Last_node()
+void NodeClass ::Deleting_the_Last_node() // for deleting the last node in the linked list
 {
     Message();
     Node *traversal_Node = head;
@@ -129,7 +129,7 @@ void NodeClass ::Deleting_the_Last_node()
     delete traversal_Node;
 }
 
-void NodeClass ::Deleting_the_First_node()
+void NodeClass ::Deleting_the_First_node() // for deleting the node at the beginning.
 {
     Message();
     Node *D = new Node;
