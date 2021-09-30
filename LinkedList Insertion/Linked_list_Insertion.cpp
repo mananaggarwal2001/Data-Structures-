@@ -10,7 +10,11 @@ struct Node
 class Node_operations
 {
     Node *head;
-
+    Node *ptr;
+protected:
+    void reset_Position(){
+        ptr=head;
+    }
 public:
     Node_operations(Node *ptr)
     {
@@ -26,14 +30,16 @@ public:
 
 void Node_operations::display() // for displaying the node
 {
-    Node *temp = new Node;
-    temp = head;
-    while (head != NULL)
+
+
+    reset_Position();
+
+    while (ptr != NULL)
     {
-        cout << temp->Name << endl;
-        cout << temp->roll_number << endl;
+        cout << ptr->Name << endl;
+        cout << ptr->roll_number << endl;
         cout << endl;
-        temp = temp->next;
+        ptr = ptr->next;
     }
 }
 void Node_operations::insertion(int number) // for creating the node and inserting the node.
