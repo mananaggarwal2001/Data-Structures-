@@ -21,7 +21,15 @@ public:
     void pop();
     void display();
     void peek();
+    void Stack_top_bottom_operation();
 };
+
+void Stack_Class:: Stack_top_bottom_operation(){
+    int stack_top= object->arr[object->top];
+    int stack_bottom= object->arr[0];
+    cout<<"The value of the stack top is: "<<stack_top<<endl;
+    cout<<"The value of the stack bottom is: "<<stack_bottom<<endl;
+}
 
 void Stack_Class ::peek()  // peek operation in the stack
 {
@@ -141,7 +149,8 @@ int main()
         cout << "3. Push the element into the stack" << endl;
         cout << "4. pop the value in the stack" << endl;
         cout << "5. Showing the particular value of the stack" << endl;
-        cout << "6. Exit" << endl;
+        cout << "6. Stack top and bottom values display" << endl;
+        cout << "7. Exit" << endl;
         cout << endl;
         cout << "Enter your choice: ";
         cin >> choice;
@@ -174,6 +183,11 @@ int main()
         }
         case 6:
         {
+            operations.Stack_top_bottom_operation();
+            break;
+        }
+        case 7:
+        {
 
             break;
         }
@@ -184,6 +198,6 @@ int main()
             break;
         }
         }
-    } while (choice != 6);
+    } while (choice != 7);
     return 0;
 }
