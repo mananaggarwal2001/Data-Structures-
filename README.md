@@ -17,6 +17,8 @@
 - [Insertion and deletion using the Array Queue](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Queue/Insertion_Deletion_Using_Array_Queue.cpp)
 - [Circular Queue Implementation Using the Array](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Queue/Circular_Queue_Implementation_Using_Array.cpp)
 - [Queue implementation using the linked list](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Queue/Queue_Insertion_Using_Linked_List.cpp)
+- [Double Ended Queue Implementation Using Linked List](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Queue/Double_ended_queue.cpp)
 ### Searches
 - [Linear Search](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Array%20Linear%20and%20Binary%20Search/LinearSearch.cpp)
 - [Binary Search](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Array%20Linear%20and%20Binary%20Search/BinarySearch.cpp)
+### Sorting
