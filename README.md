@@ -23,3 +23,4 @@
 - [Binary Search](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Array%20Linear%20and%20Binary%20Search/BinarySearch.cpp)
 ### Sorting
 - [Bubble Sort](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Sorting%20Programs/Bubble_sort.cpp)
+- [Insertion Sorting](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Sorting%20Programs/Insertion_Sorting.cpp)
