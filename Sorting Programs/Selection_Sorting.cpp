@@ -23,6 +23,7 @@ void Selection_Sort(int Array[], int size)
     int count;
     for (int i = 0; i < size-1; i++)
     {
+        cout<<"For Pass :"<<i+1<<endl;
         index_of_min= i;
         element=Array[i];
         for (int j = i+1; j < size; j++)
@@ -38,7 +39,9 @@ void Selection_Sort(int Array[], int size)
         temp = Array[index_of_min];
         Array[index_of_min]= Array[i];
         Array[i]=temp;
-
+        display(Array,size);
+        cout<<endl;
+        cout<<endl;
     }
 }
 int main()
@@ -62,6 +65,7 @@ int main()
 
     cout << "Unsorted Element are: " << endl;
     display(arr,size);
+    cout<<endl;
     Selection_Sort(arr, size);
     cout << endl;
     cout << "Sorted Element are : " << endl;
