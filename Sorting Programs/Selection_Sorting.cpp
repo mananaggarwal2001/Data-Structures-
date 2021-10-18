@@ -46,12 +46,7 @@ void Selection_Sort(int Array[], int size)
 }
 int main()
 {
-    // pass 1
-    // 00 ,01 ,02 ,03
-    // 07 ,08 ,01 ,10
-    // 01 ,08 ,07 ,10
-    // pass 2
-    // 01 ,07 ,08 ,10
+    // There will be total n-1 Passes in for the comparison.
     int size;
 
     cout << "Enter the size: ";
