@@ -24,3 +24,4 @@
 ### Sorting
 - [Bubble Sorting](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Sorting%20Programs/Bubble_sort.cpp)
 - [Insertion Sorting](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Sorting%20Programs/Insertion_Sorting.cpp)
+- [Selection Sorting](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Sorting%20Programs/Selection_Sorting.cpp)
