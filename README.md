@@ -1,5 +1,5 @@
 # Data-Structures-
-## This is the collection of all the Data Structures and Algorithms in the C++ Language
+## This is the collection of all the Data Structures and Algorithms in the C++ 
 ### Arrays
 - [Array Insertion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Array%20Insertion%20And%20Deletion/Array_Insertion.cpp)
 - [Array Deletion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Array%20Insertion%20And%20Deletion/Array_deletion.cpp)
