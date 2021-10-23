@@ -1,3 +1,4 @@
+// Performing the merge sort using the Multiple Subarray.
 #include <bits/stdc++.h>
 using namespace std;
 void PrintArray(int array[], int size) // function used for displaying the array.
