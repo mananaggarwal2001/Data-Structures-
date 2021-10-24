@@ -80,7 +80,7 @@ int main()
     int arr[size];
     for (int i = 0; i < size; i++)
     {
-        cout << "Enter the element " << i + 1 << " in the Array : ";
+        cout << "Enter the element " << i + 1 << " in the Array: ";
         cin >> arr[i];
     }
     Merge_Sort(arr, 0, size-1);

@@ -53,7 +53,6 @@ void count_sort(int Array[], int size)
         j++;
         k = 0;
     }
-    PrintArray(count_sort_Array, (max_size_element + 1));
 
     while (l < (max_size_element + 1))
     {
@@ -73,7 +72,6 @@ void count_sort(int Array[], int size)
         }
     }
 
-    PrintArray(Array, size);
 }
 int main()
 {
@@ -83,10 +81,12 @@ int main()
     int array[size];
     for (int i = 0; i < size; i++)
     {
-        cout << "Enter  the element " << i + 1 << " in the Array:  ";
+        cout << "Enter the element " << i + 1 << " in the Array: ";
         cin >> array[i];
     }
     count_sort(array, size);
+    cout<<"Sorted Array is: ";
+    PrintArray(array,size);
 
     return 0;
 }
