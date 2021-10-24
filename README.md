@@ -26,3 +26,5 @@
 - [Insertion Sorting](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Sorting%20Programs/Insertion_Sorting.cpp)
 - [Selection Sorting](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Sorting%20Programs/Selection_Sorting.cpp)
 - [Quick Sorting](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Sorting%20Programs/Quick_Sort_Algorithm.cpp)
+- [Merge Sorting using the single array](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Sorting%20Programs/Merge_Sort.cpp)
+- [Merge Sorting using the Multiple Sub Array](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Sorting%20Programs/Merging_Sort.cpp)
