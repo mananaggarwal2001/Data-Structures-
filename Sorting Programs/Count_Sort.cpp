@@ -23,7 +23,6 @@ void PrintArray(int array[], int size) // function used for displaying the array
 int finding_max_element(int array[], int size)
 {
     int element;
-    int position;
     int sub_array[size];
     int number_of_elements = sizeof(sub_array) / sizeof(sub_array[0]);
     for (int i = 0; i < size; i++)
