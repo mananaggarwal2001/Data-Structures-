@@ -3,6 +3,7 @@
 ### Arrays
 - [Array Insertion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Array%20Insertion%20And%20Deletion/Array_Insertion.cpp)
 - [Array Deletion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Array%20Insertion%20And%20Deletion/Array_deletion.cpp)
+- [Array as an ADTs Implementation](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Array%20Insertion%20And%20Deletion%20and%20ADTs/Array_As_An_ADTs.cpp)
 ### Linked List
 - [Linked List Insertion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/LinkedList%20Insertion/Linked_list_Insertion.cpp)
 - [Linked List Deletion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/LinkedList%20Deletion/LinkedListDeletion.cpp)
