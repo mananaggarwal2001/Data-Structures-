@@ -9,28 +9,38 @@ int main()
     int array[number];
     for (int i = 0; i < number; i++)
     {
-        cout<< "Enter the element "<<i+1<<" in the array ";
-        cin>>array[i];
+        cout << "Enter the element " << i + 1 << " in the array:- ";
+        cin >> array[i];
     }
-    int n = sizeof(array) / sizeof(array[0]);
-    sort(array, array + n);
+    int n = sizeof(array) / sizeof(array[0]); // for finding the number of elements which we are taking in the array.
+    sort(array, array + n);                   // for sorting the array.
     for (int i = 0; i < number; i++)
     {
-        cout << array[i] << " ";
+        cout << array[i] ;
+        if (i == number - 1)
+        {
+            cout << " ";
+        }
+        else
+        {
+            cout<<",";
+        }
     }
-    cout<<endl;
+    cout << endl;
 
     // cout<<"Enter the Element you want to search:-";
     // cin>> elementToBeSearch;
     low = 0;
     high = number;
-    cout << "Enter the Element to be searched:-";
+    cout << "Enter the Element to be searched:- ";
     cin >> elementToBeSearch;
     while (low <= high)
     {
+        // keep searching until the low and the high converges.
+        // if not found then return flag value as the false otherwise return the flag value true.
 
         mid = (high + low) / 2;
-        if (elementToBeSearch < array[mid])
+        if (elementToBeSearch < array[mid]) // In this the mid element is finding the element in the array etc.
         {
             high = mid - 1;
         }
@@ -47,8 +57,10 @@ int main()
     }
     if (flag)
     {
-        cout << "Position of the element is:- " << position<<endl;
-    }else{
-        cout<<"Element Not Found";
+        cout << "Position of the element "<< elementToBeSearch <<" is:- " << position << endl;
+    }
+    else
+    {
+        cout << "Element Not Found Terminating !!!!!!!!!!!!!!";
     }
 }
