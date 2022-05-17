@@ -1,20 +1,38 @@
 #include <bits/stdc++.h>
 using namespace std;
-void array_entry(int arr[], int no_of_elements)
+void array_entry(int arr[], int no_of_elements, int max_size)
 {
-    for (int i = 0; i < no_of_elements; i++)
+
+    if (no_of_elements > max_size)
     {
-        cout << "Enter the " << i + 1 << " element: ";
-        cin >> arr[i];
+        cout << "Maximum Size exceeded Terminating !!!!!!!!!!!!!!!"<<endl;
+    }
+    else
+    {
+
+        for (int i = 0; i < no_of_elements; i++)
+        {
+            cout << "Enter the " << i + 1 << " element: ";
+            cin >> arr[i];
+        }
     }
 }
-void display_Array(int arr[], int no_of_elements)
+bool display_Array(int arr[], int no_of_elements) // traversal of the array is performing here.
 {
+
     for (int i = 0; i < no_of_elements; i++)
     {
         cout << arr[i] << " ";
     }
     cout << endl;
+    if (no_of_elements < 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
 void deletion_beginning(int arr[], int no_of_elements)
@@ -66,7 +84,7 @@ void deletion_Particular_Position(int arr[], int no_of_elements, int position)
 int main()
 {
     int array[100], element_to_be_deleted;
-    int choice, no_of_elements, position;
+    int choice, no_of_elements, position, size = 100;
     do
     {
         cout << "1. Enter the elements in the array" << endl;
@@ -85,13 +103,16 @@ int main()
         {
             cout << "Enter the number of element you want in the Array: ";
             cin >> no_of_elements;
-            array_entry(array, no_of_elements);
+            array_entry(array, no_of_elements, size);
             break;
         }
         case 2:
         {
-            display_Array(array, no_of_elements);
-            break;
+            bool result = display_Array(array, no_of_elements);
+            if (result)
+            {
+                cout << "The array is empty" << endl;
+            }
         }
         case 3:
         {

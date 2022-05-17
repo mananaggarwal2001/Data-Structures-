@@ -11,7 +11,7 @@ void array_insertion(int array[], int size)
     }
 }
 
-void display(int array[], int size)
+void display(int array[], int size)   // traversal of the array is performing here.
 {
     for (int i = 0; i < size; i++)
     {
@@ -33,17 +33,16 @@ void insertion_of_element_from_beginning(int array[], int size, int element_to_b
         array[i + 1] = array[i];
     }
 
-    array[0]=element_to_be_inserted;
+    array[0] = element_to_be_inserted;
 }
 
 void insertion_of_element_at_randompos(int array[], int size, int element_to_be_inserted, int position)
 {
-    for (int i = size; i>= position ; i--)
+    for (int i = size; i >= position; i--)
     {
-        array[i+1]=array[i];
+        array[i + 1] = array[i];
     }
-    array[position]= element_to_be_inserted;
-
+    array[position] = element_to_be_inserted;
 }
 int main()
 {
@@ -103,10 +102,11 @@ int main()
         }
         case 5:
         {
-            display(array,no_of_elements);
+            display(array, no_of_elements);
             break;
         }
-        case 6:{
+        case 6:
+        {
             break;
         }
         default:
