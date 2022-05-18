@@ -15,7 +15,7 @@ class Node_operations
 protected:
     void reset_Position()
     {
-        ptr = head;
+        ptr = head;      // To reset the position of the pointer so that we can repeatedly use the display function to display the list.
     }
 
 public:
@@ -55,9 +55,9 @@ void Node_operations::insertion(int number) // for creating the node and inserti
     {
         // The memory is allocated in the heap not in the stack Port of the memory.
         Node *currentPointer = new Node;
-        cout << "Enter the Roll Number of Student " << i + 1 << " : " << endl;
+        cout << "Enter the Roll Number of Student " << i + 1 << " : ";
         cin >> roll_Number;
-        cout << "Enter the Name of Student " << i + 1 << " : " << endl;
+        cout << "Enter the Name of Student " << i + 1 << " : ";
         cin >> name;
         if (i == 0)
         {
@@ -90,7 +90,7 @@ void Node_operations::insertion_beginning() // for insertion of the node at the 
     head = ptr_beginning;
 }
 
-void Node_operations::insertion_ending()
+void Node_operations::insertion_ending() // For insertion of the node at the end of the list.
 {
     Node *temp = new Node;
     Node *traversal_node = new Node;
@@ -109,7 +109,7 @@ void Node_operations::insertion_ending()
     traversal_node->next = temp;
 }
 
-void Node_operations::insertion_Node_given_position()
+void Node_operations::insertion_Node_given_position() // for performing the insertion at the given position in the linked list
 {
     int position;
     cout << "Enter the position for which you want to place that Node:- ";
@@ -131,7 +131,7 @@ void Node_operations::insertion_Node_given_position()
     previous->next = newNode;
 }
 
-void Node_operations::insertion_afterNode()
+void Node_operations::insertion_afterNode() // for performing the insertion after  the given node in the linked list.
 {
     int position;
     cout << "Enter the position for which  you want to place the Node Afterwards";
