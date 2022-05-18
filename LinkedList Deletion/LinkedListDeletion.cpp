@@ -8,7 +8,7 @@ struct Node
 
 class NodeClass
 {
-    Node *head=NULL;
+    Node *head = NULL;
     Node *ptr;
     int data;
 
@@ -25,11 +25,11 @@ public:
     void Display();
 };
 
-
-void NodeClass :: Message(){
-    if (head == NULL){
-        cout<<"Linked List Empty"<<endl;
-        return;
+void NodeClass ::Message()
+{
+    if (head == NULL)
+    {
+        cout << "Linked List Empty" << endl;
     }
 }
 
@@ -53,9 +53,9 @@ void NodeClass ::Deleting_the_node_of_given_position() // for deleting the eleme
 
     if (traversal == head)
     {
-       head=traversal->next;
-       traversal->next=NULL;
-       delete traversal;
+        head = traversal->next;
+        traversal->next = NULL;
+        delete traversal;
     }
     else
     {
@@ -106,7 +106,7 @@ void NodeClass ::Deleting_the_node_of_given_value() // for deleting the node at 
         }
         else
         {
-            cout << "Value not present in the Linked List: ";
+            cout << "Value is not present in the Linked List: ";
         }
     }
 }
@@ -190,7 +190,7 @@ int main()
         cout << "3. Delete the node from the beginning" << endl;
         cout << "4. Delete the node from the end" << endl;
         cout << "5. Delete the node of the given value" << endl;
-        cout << "6. Delete the node at the given position in between" << endl;
+        cout << "6. Delete the node at the given position in the Linked List" << endl;
         cout << "7. Exit" << endl;
         cout << endl;
         cout << "Enter your choice: ";

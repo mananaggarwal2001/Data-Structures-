@@ -12,12 +12,15 @@ class D_NodeOperations
     Node *nextLink;
     Node *prevLink;
     Node *head;
-    Node *left ;
-    Node *right ;
+    Node *left;
+    Node *right;
+
 protected:
-    void reset_Position(){
-        left=right=head;
+    void reset_Position()
+    {
+        left = right = head;
     }
+
 public:
     void LinkedList_creation();
     void traversal_both_directions();
@@ -30,7 +33,7 @@ void D_NodeOperations::LinkedList_creation()
     for (int i = 0; i < Number_of_Nodes; i++)
     {
         Node *currentNode = new Node;
-        cout << "Enter the data " << i + 1 << " for the linked List: "<<endl;
+        cout << "Enter the data " << i + 1 << " for the linked List: " << endl;
         cin >> New_data;
         currentNode->data = New_data;
         currentNode->prev = NULL;
@@ -62,7 +65,7 @@ void D_NodeOperations::traversal_both_directions()
         cout << right->data << " ";
         right = right->prev;
     }
-    cout<<endl;
+    cout << endl;
 }
 
 int main()

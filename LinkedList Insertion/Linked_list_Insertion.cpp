@@ -15,7 +15,7 @@ class Node_operations
 protected:
     void reset_Position()
     {
-        ptr = head;      // To reset the position of the pointer so that we can repeatedly use the display function to display the list.
+        ptr = head;      // To reset the position of the pointer so that we can repeatedly use the display function to display the linked list.
     }
 
 public:
