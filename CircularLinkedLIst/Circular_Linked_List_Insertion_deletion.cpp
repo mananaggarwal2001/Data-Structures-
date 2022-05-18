@@ -136,13 +136,13 @@ void Circular_linkedList ::Deletion_at_a_given_Position()
 
 void Circular_linkedList ::Deletion_of_a_given_value()
 {
-    int data,position,count=0;
+    int data, position, count = 0;
     bool flag = false;
     cout << "Enter the data Which you want to delete: ";
     cin >> data;
     Node *temp = head;
     temp = temp->next;
-    if (head->data == data)
+    if (head->data == data) // for checking the condition whether the head pointer contain the given data or not.
     {
         Node *ptr = head;
         Node *temp = head;
@@ -155,29 +155,40 @@ void Circular_linkedList ::Deletion_of_a_given_value()
         head = head->next;
         temp->next = NULL;
         delete temp;
-
     }
-    else
+    else if (head->data != data)
     {
         Node *temp = head;
-        temp=temp->next;
-        Node *ptr=head;
-        while (temp!=head)
+        temp = temp->next;
+        Node *ptr = head;
+        while (temp != head)
         {
-            if(temp->data==data){
+            if (temp->data == data)
+            {
                 break;
             }
-            temp=temp->next;
-
+            else if (temp->data != data && temp->next == head)
+            {
+                break;
+            }
+            temp = temp->next; // for doing  the traversal of the data.
         }
-        while(ptr->next!=temp){
-            ptr=ptr->next;
+        while (ptr->next != temp)
+        {
+            ptr = ptr->next;
         }
 
-        ptr->next=temp->next;
-        temp->next=NULL;
-        delete temp;
+        if (temp->next == head && temp->data!=data)
+        {
+            cout << "Element Not Found Terminating !!!!!!!!"<<endl; // for checking the condition whether or not we have put the value which is not available in the Circular linked list or not.
+        }
+        else
+        {
 
+            ptr->next = temp->next;
+            temp->next = NULL;
+            delete temp;
+        }
     }
 }
 
@@ -231,7 +242,7 @@ int main()
         }
 
         default:
-            cout<<"WRONG CHOICE !!!!!!!!!!!!!!!!!!!!!";
+            cout << "WRONG CHOICE !!!!!!!!!!!!!!!!!!!!!";
             break;
         }
     } while (choice != 6);
