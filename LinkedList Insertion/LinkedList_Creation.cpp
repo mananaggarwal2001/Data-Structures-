@@ -4,7 +4,7 @@ using namespace std;
 struct Node
 {
     int Number;
-    Node *nextToPoint; // self referencial structure.
+    Node *nextToPoint; // self referencial structure. and nexttoPoint Pointer is used to store the address of the Next Node which is made in the linked list.
 };
 
 void linkedListTraversal(Node *ptr)
@@ -27,6 +27,7 @@ int main()
     Node *firstNode = new Node;
     Node *secondNode = new Node;
     Node *thirdNode= new Node;
+    Node *fourthNode = new Node;
 
     // Link first and the second node.
     headNode->Number = 12;
@@ -42,8 +43,11 @@ int main()
 
     // Link the fourth and the fifth node.
     thirdNode->Number= 45;
-    thirdNode->nextToPoint=NULL;
+    thirdNode->nextToPoint=fourthNode;
 
+    // Link to the fifth and the sixth node
+    fourthNode->Number= 100;
+    fourthNode->nextToPoint=NULL;
 
     linkedListTraversal(headNode);
 }

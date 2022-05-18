@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 stack<char> infixStack;
-
 int Precedence(char ch)
 {
     if (ch == '*' || ch == '/')
     {
+
         return 3;
     }
     else if (ch == '+' || ch == '-')
@@ -86,7 +86,6 @@ string infix_to_postfix()
 
     return Postfix_String;
 }
-
 int main()
 {
     string final_String = infix_to_postfix();

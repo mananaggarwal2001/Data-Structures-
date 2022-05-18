@@ -4,17 +4,20 @@ struct Node
 {
     string Name;
     int roll_number;
-    Node *next;
+    Node *next; // It is used to point out the next node that's why this pointer is used . Mainly used to store the address of the next node which was located in the memory.
 };
 
 class Node_operations
 {
     Node *head;
     Node *ptr;
+
 protected:
-    void reset_Position(){
-        ptr=head;
+    void reset_Position()
+    {
+        ptr = head;
     }
+
 public:
     Node_operations(Node *ptr)
     {
@@ -30,7 +33,6 @@ public:
 
 void Node_operations::display() // for displaying the node
 {
-
 
     reset_Position();
 
@@ -51,6 +53,7 @@ void Node_operations::insertion(int number) // for creating the node and inserti
 
     for (int i = 0; i < number; i++)
     {
+        // The memory is allocated in the heap not in the stack Port of the memory.
         Node *currentPointer = new Node;
         cout << "Enter the Roll Number of Student " << i + 1 << " : " << endl;
         cin >> roll_Number;
