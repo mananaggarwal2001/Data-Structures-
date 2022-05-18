@@ -1,111 +1,119 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 struct Node
 {
     int data;
-    Node *prev;
-    Node *next;
+    Node *prev; // for pointing to the previous of the LinkedList
+    Node *next; // for pointing to the next of the LinkedList.
 };
 
-class D_NodeOperations
+class D_ListClass
 {
-    Node *nextLink;
-    Node *prevLink;
-    Node *head;
-    Node *left;
-    Node *right;
-
-protected:
-    void reset_Position()
-    {
-        left = right = head;
-    }
+private:
+    Node *head = NULL;
 
 public:
-    void LinkedList_creation();
-    void traversal_both_directions();
+    void LinkList_Creation();                          // for creating the Doubly LinkedList
+    void Traversal_and_Display_List_Both_Directions(); // for doing the traversal of the List in the both direction.
 };
-void D_NodeOperations::LinkedList_creation()
+
+void D_ListClass ::LinkList_Creation()
 {
-    int Number_of_Nodes, New_data;
-    cout << "Enter the number of the nodes: ";
-    cin >> Number_of_Nodes;
-    for (int i = 0; i < Number_of_Nodes; i++)
+    int number_required, data_req; // for asking the user that how many nodes does he want  to create.
+    Node *prevLink = NULL;
+    Node *nextLink = NULL;
+    cout << "Enter the number of the Nodes for creating the Doubly Linked List :- ";
+    cin >> number_required;
+    for (int i = 0; i < number_required; i++)
     {
-        Node *currentNode = new Node;
-        cout << "Enter the data " << i + 1 << " for the linked List: " << endl;
-        cin >> New_data;
-        currentNode->data = New_data;
-        currentNode->prev = NULL;
+        Node *currentNode = new Node; // for dynamically allocating the memory in the heap.
+        cout << "Enter the required Data for"
+             << " " << i + 1 << " inserting into the Linked List :- ";
+        cin >> data_req;
+        currentNode->data = data_req;
         currentNode->next = NULL;
-        if (i == 0)
+        currentNode->prev = NULL;
+        if (head == NULL)
         {
-            nextLink = head = currentNode = prevLink;
+            head = prevLink = nextLink = currentNode; // when the head point is pointing to the null parameter .
         }
-        nextLink->next = currentNode;
-        nextLink = currentNode;
-        nextLink->prev = prevLink;
-        prevLink = prevLink->next;
+        else
+        {
+            nextLink->next = currentNode;
+            nextLink = currentNode;
+            nextLink->prev = prevLink;
+            prevLink = prevLink->next;
+        }
     }
 }
-void D_NodeOperations::traversal_both_directions()
-{
-    reset_Position();
-    cout << "Forward Direction Display:" << endl;
-    while (right != NULL)
-    {
-        right = right->next;
-        cout << left->data << " ";
-        left = left->next;
-    }
 
-    cout << "Reverse Direction Display: " << endl;
-    while (right != head)
+void D_ListClass ::Traversal_and_Display_List_Both_Directions()
+{
+    Node *ptr = head;
+    cout << "Displaying the result in the forward Direction " << endl;
+    cout << endl;
+    while (ptr->next != NULL)
     {
-        cout << right->data << " ";
-        right = right->prev;
+        cout << ptr->data;
+        ptr = ptr->next;
+        if (ptr->next == NULL)
+        {
+            cout << "";
+        }
+        else
+        {
+            cout << ",";
+        }
     }
+    cout << "," << ptr->data;
+    cout << endl;
+    cout << "Displaying the result in the previous Direction " << endl;
+    cout << endl;
+    while (ptr->prev != NULL)
+    {
+        cout << ptr->data;
+        ptr = ptr->prev;
+        if (ptr->prev == NULL)
+        {
+            cout << "";
+        }
+        else
+        {
+            cout << ",";
+        }
+    }
+    cout << "," << ptr->data;
     cout << endl;
 }
 
 int main()
 {
     int choice;
-    D_NodeOperations operations;
+    D_ListClass object;
     do
     {
-        cout << "1.Create the doubly Linked List: " << endl;
-        cout << "2.Display the doubly Linked List in both Directions" << endl;
-        cout << "3.Exit";
+        cout << "1. Create the Doubly Linked List" << endl;
+        cout << "2. Traversal the list and Display in both the reverse and  the forward Direction" << endl;
+        cout << "3. Exit";
         cout << endl;
-
-        cout << "Enter your choice: ";
+        cout << "Enter your choice :- ";
         cin >> choice;
         switch (choice)
         {
         case 1:
-        {
-            operations.LinkedList_creation();
+            object.LinkList_Creation();
             break;
-        }
         case 2:
-        {
-            operations.traversal_both_directions();
+            object.Traversal_and_Display_List_Both_Directions();
             break;
-        }
         case 3:
-        {
-
             break;
-        }
 
         default:
-        {
-            cout << "Wrong Choice !!!!!!!!!!!!!!!!!!";
+            cout << "Wrong Choice Please Enter the choice Again !!!!!!!" << endl;
             break;
         }
-        }
-    } while (choice != 3);
 
-    return 0;
+    } while (choice != 3);
 }
