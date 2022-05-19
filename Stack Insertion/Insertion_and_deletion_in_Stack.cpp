@@ -12,7 +12,7 @@ class Stack_Class
     Stack *object;
 
 protected:
-    bool isEmpty();
+    bool isEmpty();   // for checking the condition whether the stack is empty or full.
     bool isFull();
 
 public:
@@ -130,7 +130,7 @@ void Stack_Class ::push()
         int element;
         cout << "Enter the element which you want to insert in the Stack: ";
         cin >> element;
-        object->top++; // for increamenting the index in the array.
+        object->top++; // for increamenting the index in the array for performing the push operation.
         object->arr[object->top] = element;
     }
 }
@@ -143,7 +143,9 @@ void Stack_Class ::pop()
     }
     else
     {
+        int value= object->arr[object->top]; // for storing the value of the index position top in the value variable.
         object->top--;
+        cout<<"The Popped out value is :- "<<value<<endl;
     }
 }
 int main()
