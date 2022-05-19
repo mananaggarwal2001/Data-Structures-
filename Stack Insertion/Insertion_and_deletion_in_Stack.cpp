@@ -12,7 +12,7 @@ class Stack_Class
     Stack *object;
 
 protected:
-    bool isEmpty();   // for checking the condition whether the stack is empty or full.
+    bool isEmpty(); // for checking the condition whether the stack is empty or full.
     bool isFull();
 
 public:
@@ -28,7 +28,7 @@ void Stack_Class::Stack_top_bottom_operation()
 {
     if (isEmpty())
     {
-        cout<<"Stack UnderFlow !!!!!!!!!!!!!!!!"<<endl;
+        cout << "Stack UnderFlow !!!!!!!!!!!!!!!!" << endl;
     }
     else
     {
@@ -39,22 +39,25 @@ void Stack_Class::Stack_top_bottom_operation()
     }
 }
 
-void Stack_Class ::peek() // peek operation in the stack
+void Stack_Class ::peek() // peek operation in the stack is used to find the value at the given index with respect to the top variable which is used for finding the index.
 {
     int position;
     cout << "Start Entering the position from the 1 not from the 0!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
     cout << "Enter the position of the element you want in stack from the top: ";
     cin >> position;
-    if (position > object->top || position == -1)
+    if ((object->top-position +1)<0)
     {
-        cout << "Invalid position entered try again";
+        cout << "Invalid position entered try again!!!!!!! "<<endl;
     }
     else
     {
-        int var = object->arr[object->top - position + 1];  // for checking the value at the given index with respect from the top index value.
-        cout << "The value of the stack at the " << position << " position is: " << var;  // for showing the value contained in the given position.
+        int var = object->arr[object->top - position + 1];                               // for checking the value at the given index with respect from the top index value.
+        cout << "The value of the stack at the " << position << " position is: " << var; // for showing the value contained in the given position.
     }
     cout << endl;
+    // we have done the +1 in the formula int var = object->arr[object->top - position + 1]
+    // because we are starting the value from the 1 not from the 0 in the peek operation so that  the layman value can understand what was happening and the noob person can also understand etc.
+    // This formula was made considering the top element as the 1st element not 0 etc.
 }
 
 bool Stack_Class ::isEmpty()
@@ -143,9 +146,9 @@ void Stack_Class ::pop()
     }
     else
     {
-        int value= object->arr[object->top]; // for storing the value of the index position top in the value variable.
+        int value = object->arr[object->top]; // for storing the value of the index position top in the value variable.
         object->top--;
-        cout<<"The Popped out value is :- "<<value<<endl;
+        cout << "The Popped out value is :- " << value << endl;
     }
 }
 int main()
