@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-struct Stack
+struct Stack // Implementation of the stack using the structure.
 {
     int size;
     int top;
-    int *arr;
+    int *arr; // for allocating the value in the heap memory rathar than the stack memory.
 };
 
 class Stack_Class
@@ -24,17 +24,25 @@ public:
     void Stack_top_bottom_operation();
 };
 
-void Stack_Class:: Stack_top_bottom_operation(){
-    int stack_top= object->arr[object->top];
-    int stack_bottom= object->arr[0];
-    cout<<"The value of the stack top is: "<<stack_top<<endl;
-    cout<<"The value of the stack bottom is: "<<stack_bottom<<endl;
+void Stack_Class::Stack_top_bottom_operation()
+{
+    if (isEmpty())
+    {
+        cout<<"Stack UnderFlow !!!!!!!!!!!!!!!!"<<endl;
+    }
+    else
+    {
+        int stack_top = object->arr[object->top];
+        int stack_bottom = object->arr[0];
+        cout << "The value of the stack top is: " << stack_top << endl;
+        cout << "The value of the stack bottom is: " << stack_bottom << endl;
+    }
 }
 
-void Stack_Class ::peek()  // peek operation in the stack
+void Stack_Class ::peek() // peek operation in the stack
 {
     int position;
-    cout<<"Start Entering the position from the 1 not from the 0!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"<<endl;
+    cout << "Start Entering the position from the 1 not from the 0!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
     cout << "Enter the position of the element you want in stack from the top: ";
     cin >> position;
     if (position > object->top || position == -1)
@@ -43,10 +51,10 @@ void Stack_Class ::peek()  // peek operation in the stack
     }
     else
     {
-        int var= object->arr[object->top-position +1];
-        cout<<"The value of the stack at the "<< position <<" position is: "<<var;
+        int var = object->arr[object->top - position + 1];
+        cout << "The value of the stack at the " << position << " position is: " << var;  // for showing the value contained in the given position.
     }
-    cout<<endl;
+    cout << endl;
 }
 
 bool Stack_Class ::isEmpty()
@@ -81,7 +89,7 @@ void Stack_Class ::creation()
     cout << "Enter the size of the stack: ";
     cin >> s;
     object->size = s;
-    object->arr = new int[object->size];
+    object->arr = new int[object->size]; // for allocating the dynamic Memory for storing the values in the stack.
     while (ch == 'y' || ch == 'Y')
     {
         if (isFull())
@@ -122,8 +130,8 @@ void Stack_Class ::push()
         int element;
         cout << "Enter the element which you want to insert in the Stack: ";
         cin >> element;
+        object->top++; // for increamenting the index in the array.
         object->arr[object->top] = element;
-        object->top++;
     }
 }
 
