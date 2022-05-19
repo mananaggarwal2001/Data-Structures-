@@ -51,7 +51,7 @@ void Stack_Class ::peek() // peek operation in the stack
     }
     else
     {
-        int var = object->arr[object->top - position + 1];
+        int var = object->arr[object->top - position + 1];  // for checking the value at the given index with respect from the top index value.
         cout << "The value of the stack at the " << position << " position is: " << var;  // for showing the value contained in the given position.
     }
     cout << endl;
