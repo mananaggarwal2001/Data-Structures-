@@ -3,7 +3,7 @@ using namespace std;
 struct Stack
 {
     int data;
-    Stack *next;
+    Stack *next; //  Structure of the node (Self Referencial Structure).
 };
 class Stack_Operation
 {
@@ -19,9 +19,31 @@ public:
     void display();
     void push();
     void pop();
+    void peek_in_Stack_LinkedList(); // for retreaving the data according to the given position in the stack.
     void Stack_top();
     void Stack_bottom();
 };
+
+void Stack_Operation::peek_in_Stack_LinkedList()
+{
+    int Position;
+    cout << "Enter the position from the top for which you want the data of that element:- ";
+    cin >> Position;
+    Stack *ptr = top; // Ptr is the supplimentary pointer which is points out to the node where the top pointer is present.
+    for (int i = 0; (i < Position - 1 && ptr != NULL); i++)
+    {
+        ptr = ptr->next; // for moving the ptr pointer.
+    }
+
+    if (ptr != NULL)
+    {
+        cout << "The Value at this position " << Position << " is :- " << ptr->data<<endl;
+    }
+    else
+    {
+        cout << "Wrong Position is Given Please try again !!!!!!!!!!!!!!!!!!!!!!!!!"<<endl;
+    }
+}
 
 void Stack_Operation::Stack_top()
 {
@@ -132,7 +154,7 @@ void Stack_Operation::display()
         }
         else
         {
-            cout<<",";
+            cout << ",";
         }
     }
     cout << endl;
@@ -175,7 +197,8 @@ int main()
         cout << "4. pop the element in the stack" << endl;
         cout << "5. Stack Top Value" << endl;
         cout << "6. Stack bottom Value" << endl;
-        cout << "7. Exit" << endl;
+        cout << "7. Data of that element which is retreaved According given Position" << endl;
+        cout << "8. Exit" << endl;
         cout << endl;
         cout << "Enter the choice: ";
         cin >> choice;
@@ -213,6 +236,11 @@ int main()
         }
         case 7:
         {
+            operations.peek_in_Stack_LinkedList();
+            break;
+        }
+        case 8:
+        {
             break;
         }
 
@@ -223,6 +251,6 @@ int main()
         }
         }
 
-    } while (choice != 7);
+    } while (choice != 8);
     return 0;
 }
