@@ -59,7 +59,8 @@ string infix_to_postfix()
                         StoredChar = infixStack.top();
                         Postfix_String.push_back(StoredChar);
                         infixStack.pop();
-                        if(infixStack.empty()){
+                        if (infixStack.empty())
+                        {
                             break;
                         }
                         continue;

@@ -7,7 +7,7 @@ struct Node
 };
 class Circular_linkedList
 {
-    Node *head;
+    Node *head=NULL;
 
 public:
     void Insertion_at_a_given_Position();
@@ -26,15 +26,15 @@ void Circular_linkedList::LinkedList_Creation()
     cin >> Number_of_nodes;
     for (int i = 0; i < Number_of_nodes; i++)
     {
-        Node *currentNode = new Node;
+        Node *currentNode = new Node; // for creating the new node for creating the LinkedList etc.
         cout << "Enter the data of the node " << i + 1 << " : ";
         cin >> information;
-        if (i == 0)
+        if (head==NULL)
         {
             head = ptr = currentNode;
         }
         currentNode->data = information;
-        currentNode->next = head;
+        currentNode->next = NULL;
         ptr->next = currentNode;
         ptr = currentNode;
     }
@@ -82,15 +82,23 @@ void Circular_linkedList::Display()
     Node *temp = head;
     if (head == NULL)
     {
-        cout << "Linked List Empty";
+        cout << "Linked List Empty!!!!!!!!!";
     }
     else
     {
-        cout << head->data << " ";
+        cout << head->data << ",";
         temp = temp->next;
         while (temp != head)
         {
-            cout << temp->data << " ";
+            cout << temp->data;
+            if (temp->next == head)
+            {
+                cout << "";
+            }
+            else
+            {
+                cout<<",";
+            }
             temp = temp->next;
         }
     }
@@ -178,9 +186,9 @@ void Circular_linkedList ::Deletion_of_a_given_value()
             ptr = ptr->next;
         }
 
-        if (temp->next == head && temp->data!=data)
+        if (temp->next == head && temp->data != data)
         {
-            cout << "Element Not Found Terminating !!!!!!!!"<<endl; // for checking the condition whether or not we have put the value which is not available in the Circular linked list or not.
+            cout << "Element Not Found Terminating !!!!!!!!" << endl; // for checking the condition whether or not we have put the value which is not available in the Circular linked list or not.
         }
         else
         {
