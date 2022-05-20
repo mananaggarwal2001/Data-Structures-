@@ -8,7 +8,7 @@
 - [Linked List Insertion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/LinkedList%20Insertion/Linked_list_Insertion.cpp)
 - [Linked List Deletion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/LinkedList%20Deletion/LinkedListDeletion.cpp)
 - [Circular Linked List Insertion and deletion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/CircularLinkedLIst/Circular_Linked_List_Insertion_deletion.cpp)
-- [Basic Doubly Linked List](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Doubly%20LinkedList%20Traversal/DoublyLinkedList.cpp)
+- [Basic Doubly Linked List Implementation](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Doubly%20LinkedList%20Traversal/DoublyLinkedList.cpp)
 ### Stack 
 - [Stack Insertion and deletion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Stack%20Insertion/Insertion_and_deletion_in_Stack.cpp)
 - [Stack Operation Using the Linked list](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Stack%20Operation%20Using%20Linked%20List/Stack_Operation_Using_Linked_List.cpp)
