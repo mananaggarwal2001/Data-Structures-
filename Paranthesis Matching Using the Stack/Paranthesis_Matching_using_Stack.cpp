@@ -25,7 +25,7 @@ void Stack_Paranthesis::reset_stack()
     while (top != NULL)
     {
         Stack *ptr = top;
-        top=top->next;
+        top = top->next;
         delete ptr;
     }
 }
@@ -73,12 +73,16 @@ void Stack_Paranthesis::processing_Results()
 
     if (Popcount == pushCount)
     {
-        cout << "The Stack is Balanced" << endl;
+        cout << "The Expression is Balanced" << endl;
     }
     else if (pushCount > Popcount)
     {
-        cout << "The Stack is not Balanced" << endl;
+        cout << "The Expression is not Balanced" << endl;
         reset_stack();
+    }
+    else if (pushCount < Popcount)
+    {
+        cout<<"The Expression is not balanced"<<endl;
     }
 }
 

@@ -1,5 +1,6 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
+stack<char> point;
 struct Stack
 {
     char ch;
@@ -20,43 +21,51 @@ public:
     void processing_Results();
 };
 
-
-void Stack_Paranthesis:: processing_Results(){
-    string Expression;
-    int popcount=0;
-    int pushCount=0;
-    cout<<"Enter the Expression Using the Multiple Paranthesis: ";
-    cin>>Expression;
+void Stack_Paranthesis::processing_Results()
+{
+    string Expression; // string is given and we can also treat them as the array.
+    int popcount = 0;
+    int pushCount = 0;
+    cout << "Enter the Expression Using the Multiple Paranthesis: ";
+    cin >> Expression;
     for (int i = 0; i < Expression.size(); i++)
     {
-        if(Expression[i]=='('|| Expression[i]=='{'||Expression[i]=='['){
+        if (Expression[i] == '(' || Expression[i] == '{' || Expression[i] == '[')
+        {
             push(Expression[i]);
             pushCount++;
-        } else if (Expression[i]==')'|| Expression[i]=='}'||Expression[i]==']'){
-            if(isEmpty()){
-                cout<<"Stack is Empty as the Expression is Unbalanced "<<endl;
+        }
+        else if (Expression[i] == ')' || Expression[i] == '}' || Expression[i] == ']')
+        {
+            if (isEmpty())
+            {
+                cout << "Stack is Empty as the Expression is Unbalanced " << endl;
                 return;
-            }else{
+            }
+            else
+            {
                 pop(Expression[i]);
                 popcount++;
             }
         }
     }
 
-    if(popcount==pushCount){
-        cout<<"Stack is balanced"<<endl;
-    }else if(pushCount>popcount){
-        cout<<"Stack is Unbalanced"<<endl;
+    if (popcount == pushCount)
+    {
+        cout << "Stack is balanced" << endl;
+    }
+    else if (pushCount > popcount)
+    {
+        cout << "Stack is Unbalanced" << endl;
         reset_stack();
     }
-
 }
 void Stack_Paranthesis::reset_stack()
 {
     while (top != NULL)
     {
         Stack *ptr = top;
-        top=top->next;
+        top = top->next;
         delete ptr;
     }
 }
@@ -90,11 +99,14 @@ void Stack_Paranthesis::push(char ch)
 void Stack_Paranthesis::pop(char R_ch)
 {
     Stack *new_node = top;
-    if((top->ch=='('&&R_ch==')')||(top->ch=='{'&&R_ch=='}')||(top->ch=='['&&R_ch==']')){
-        top=top->next;
+    if ((top->ch == '(' && R_ch == ')') || (top->ch == '{' && R_ch == '}') || (top->ch == '[' && R_ch == ']'))
+    {
+        top = top->next;
         delete new_node;
-    }else{
-        cout<<"Stack is Unbalanced and Further pop Operation can't be Performed"<<endl;
+    }
+    else
+    {
+        cout << "Stack is Unbalanced and Further pop Operation can't be Performed" << endl;
         return;
     }
 }
@@ -104,7 +116,7 @@ int main()
     Stack_Paranthesis operations;
     do
     {
-        cout << "1. Result of the Given Expression:" << endl;
+        cout << "1. Result of the Given Expression" << endl;
         cout << "2. Exit" << endl;
         cout << endl;
         cout << "Enter your Choice: ";
@@ -122,6 +134,7 @@ int main()
         }
 
         default:
+            cout<<"Wrong Choice !!!!!!!!!!!!!!!!!!!!"<<endl;
             break;
         }
     } while (choice != 2);
