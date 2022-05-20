@@ -13,7 +13,7 @@ class Stack_Paranthesis
 
 protected:
     void reset_stack();
-    void pop(char ch);
+    bool pop(char ch);
     void push(char ch);
     bool isEmpty();
 
@@ -26,9 +26,10 @@ void Stack_Paranthesis::processing_Results()
     string Expression; // string is given and we can also treat them as the array.
     int popcount = 0;
     int pushCount = 0;
+    bool result;
     cout << "Enter the Expression Using the Multiple Paranthesis: ";
     cin >> Expression;
-    for (int i = 0; i < Expression.size(); i++)
+    for (int i = 0; Expression[i]!='\0'; i++)
     {
         if (Expression[i] == '(' || Expression[i] == '{' || Expression[i] == '[')
         {
@@ -44,20 +45,23 @@ void Stack_Paranthesis::processing_Results()
             }
             else
             {
-                pop(Expression[i]);
+                result = pop(Expression[i]);
                 popcount++;
             }
         }
     }
 
-    if (popcount == pushCount)
+    if (result && (pushCount == popcount))
     {
-        cout << "Stack is balanced" << endl;
+        cout << "Expression is Unbalanced as the Pop Operation is failed !!!!!!!" << endl;
     }
-    else if (pushCount > popcount)
+    else if (!result && (pushCount == popcount))
     {
-        cout << "Stack is Unbalanced" << endl;
-        reset_stack();
+        cout << "Expression is Balanced !!!!!!!" << endl;
+    }
+    else if (pushCount != popcount)
+    {
+        cout << "Expression is not balanced !!!!!!!!" << endl;
     }
 }
 void Stack_Paranthesis::reset_stack()
@@ -96,9 +100,10 @@ void Stack_Paranthesis::push(char ch)
         top = new_node;
     }
 }
-void Stack_Paranthesis::pop(char R_ch)
+bool Stack_Paranthesis::pop(char R_ch)
 {
     Stack *new_node = top;
+    bool flag = false;
     if ((top->ch == '(' && R_ch == ')') || (top->ch == '{' && R_ch == '}') || (top->ch == '[' && R_ch == ']'))
     {
         top = top->next;
@@ -106,9 +111,10 @@ void Stack_Paranthesis::pop(char R_ch)
     }
     else
     {
-        cout << "Stack is Unbalanced and Further pop Operation can't be Performed" << endl;
-        return;
+
+        flag = true; // when the pop Operation is failed then the value of the flag value is true.
     }
+    return flag;
 }
 int main()
 {
@@ -134,7 +140,7 @@ int main()
         }
 
         default:
-            cout<<"Wrong Choice !!!!!!!!!!!!!!!!!!!!"<<endl;
+            cout << "Wrong Choice !!!!!!!!!!!!!!!!!!!!" << endl;
             break;
         }
     } while (choice != 2);
