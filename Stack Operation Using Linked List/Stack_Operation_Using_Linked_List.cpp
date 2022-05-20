@@ -49,7 +49,7 @@ void Stack_Operation::Stack_bottom()
         {
             ptr = ptr->next;
         }
-        cout <<"The Bottom Most Value of the Stack is: "<< ptr->data;
+        cout << "The Bottom Most Value of the Stack is: " << ptr->data;
         cout << endl;
     }
 }
@@ -124,8 +124,16 @@ void Stack_Operation::display()
     position_reset();
     while (ptr != NULL)
     {
-        cout << ptr->data << " ";
+        cout << ptr->data;
         ptr = ptr->next;
+        if (ptr == NULL)
+        {
+            cout << "";
+        }
+        else
+        {
+            cout<<",";
+        }
     }
     cout << endl;
 }
@@ -145,7 +153,7 @@ void Stack_Operation::pop()
 {
     if (isEmpty())
     {
-        cout << "The Stack is Empty" << endl;
+        cout << "The UnderFlow !!!!!!!!!!!!!" << endl;
     }
     else
     {
