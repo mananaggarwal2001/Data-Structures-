@@ -160,7 +160,7 @@ void Stack_Operation::pop()
         Stack *delete_node = top;
         top = top->next;
         delete delete_node;
-    }
+    } // Agar top pointer ki value change ho rhi function me to uska main() se koi lena dena nhi hain (call by value is implemented implictly) . In this case we have to send the address of that value so that it would reflect changes in the actual parameters (function called Parameter) etc.
 }
 
 int main()
