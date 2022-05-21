@@ -7,7 +7,7 @@ struct Node
 };
 class Circular_linkedList
 {
-    Node *head=NULL;
+    Node *head = NULL;
 
 public:
     void Insertion_at_a_given_Position();
@@ -29,7 +29,7 @@ void Circular_linkedList::LinkedList_Creation()
         Node *currentNode = new Node; // for creating the new node for creating the LinkedList etc.
         cout << "Enter the data of the node " << i + 1 << " : ";
         cin >> information;
-        if (head==NULL)
+        if (head == NULL)
         {
             head = ptr = currentNode;
         }
@@ -79,31 +79,22 @@ void Circular_linkedList ::Insertion_at_a_given_Position()
 
 void Circular_linkedList::Display()
 {
-    Node *temp = head;
-    if (head == NULL)
+    Node *ptr = head; // ptr pointer is used for checking Numbers of nodes in the linked list.
+    do
     {
-        cout << "Linked List Empty!!!!!!!!!";
-    }
-    else
-    {
-        cout << head->data << ",";
-        temp = temp->next;
-        while (temp != head)
+        cout << ptr->data;
+        ptr = ptr->next;
+        if (ptr == head)
         {
-            cout << temp->data;
-            if (temp->next == head)
-            {
-                cout << "";
-            }
-            else
-            {
-                cout<<",";
-            }
-            temp = temp->next;
+            cout << "";
         }
-    }
+        else
+        {
+            cout<<",";
+        }
 
-    cout << endl;
+    } while (ptr != head);
+    cout<<endl;
 }
 
 void Circular_linkedList ::Deletion_at_a_given_Position()
