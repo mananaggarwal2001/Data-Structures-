@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-stack<char> infixStack;
+stack<char> infixStack; // using the STL of the stack i have implemented the code for the infix to postfix expression.
+
+// higher precendece operator will push into the stack on the top of the lower precendence operator.
+// Same precedence operator will popped out from the stack
+// Lower Precedence operator will be popped out from the stack.
 int Precedence(char ch)
 {
     if (ch == '*' || ch == '/')
@@ -14,7 +18,7 @@ int Precedence(char ch)
     }
     else
     {
-        return 0;
+        return 0; // we are returning the value according to the Precidence of the operator etc.
     }
 }
 
@@ -36,7 +40,7 @@ string infix_to_postfix()
     string Postfix_String;
     char StoredChar;
     char Stored_char2;
-    cout << "Enter the Expression: ";
+    cout << "Enter the Expression wthout the paranthesis (): ";
     cin >> Expression;
     for (int i = 0; i < Expression.size(); i++)
     {
