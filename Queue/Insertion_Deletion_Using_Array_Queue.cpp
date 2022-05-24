@@ -50,7 +50,7 @@ void Queue_operation::display()
 {
     if (isempty())
     {
-        cout << "Queue is Empty" << endl;
+        cout << "Queue is Empty!!!!!!!!!!!!!!!!!!" << endl;
         reset_position();
     }
     else
@@ -58,7 +58,12 @@ void Queue_operation::display()
         cout << "The elements present in the queue is: ";
         for (int i = frontInd; i < rearInd; i++)
         {
-            cout << arr[i] << " ";
+            cout << arr[i] ;
+            if(i==rearInd-1){
+                cout<<"";
+            }else {
+                cout<<",";
+            }
         }
         cout << endl;
     }
@@ -78,7 +83,7 @@ void Queue_operation::insertElements_in_queue()
         }
         else
         {
-            cout << "Enter the " << count + 1 << " element which you want to insert in the queue: ";
+            cout << "Enter the " << count + 1 << " element which you want to insert in the queue:- ";
             cin >> element;
             if (frontInd == -1 || rearInd == -1)
             {
@@ -89,7 +94,7 @@ void Queue_operation::insertElements_in_queue()
             rearInd++;
             count++;
 
-            cout << "Do you want to enter more: ";
+            cout << "Do you want to enter more:- ";
             cin >> ch;
         }
     }
