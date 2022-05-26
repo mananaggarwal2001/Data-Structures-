@@ -8,8 +8,8 @@ struct Node
 
 class Queue_Class
 {
-    Node *front = NULL;
-    Node *rear = NULL;
+    Node *front = NULL; // for handing the front portion in the queue
+    Node *rear = NULL;  // for handing the rear portiong in the queue.
     Node *ptr;
 
 protected:
@@ -45,6 +45,7 @@ void Queue_Class::Enqueue()
     int element;
     Node *enqueue_Node = new Node;
     // Node *enqueue_Node= (Node*)malloc(sizeof(Node)); // for allocating the memory in the C Language.
+    // (Node*) here in the first is used for typecasting the given datatype into the (Node*) user defined datatype.
     cout << "Enter the data for adding in the node: ";
     cin >> element;
     enqueue_Node->data = element;
