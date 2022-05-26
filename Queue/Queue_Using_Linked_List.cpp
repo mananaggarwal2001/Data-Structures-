@@ -15,6 +15,7 @@ class Queue_Class
 protected:
     bool isEmpty();
     void reset_Pos();
+    bool isFull(); // for checking whether the queue is full or not.
 
 public:
     void Insert_in_the_queue();
@@ -34,6 +35,7 @@ void Queue_Class ::Dequeue()
     {
         del_node = front;
         front = front->next;
+        cout << "The Removed Element is :- " << del_node->data << endl;
         delete del_node;
     }
 }
@@ -42,6 +44,7 @@ void Queue_Class::Enqueue()
 {
     int element;
     Node *enqueue_Node = new Node;
+    // Node *enqueue_Node= (Node*)malloc(sizeof(Node)); // for allocating the memory in the C Language.
     cout << "Enter the data for adding in the node: ";
     cin >> element;
     enqueue_Node->data = element;
@@ -98,7 +101,7 @@ void Queue_Class::display()
     }
     else
     {
-        cout<<"The elements present in the queue is: ";
+        cout << "The elements present in the queue is: ";
         while (ptr != rear->next)
         {
             cout << ptr->data;
@@ -113,7 +116,7 @@ void Queue_Class::display()
             ptr = ptr->next;
         }
     }
-    cout<<endl;
+    cout << endl;
 }
 
 bool Queue_Class::isEmpty()
