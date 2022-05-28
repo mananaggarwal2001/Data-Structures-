@@ -6,7 +6,7 @@ void insertion_Sorting(int arr[], int size)
     int element;
     int position;
     int j;
-    for (int i = 1; i < size ; i++)
+    for (int i = 1; i < size; i++)
     {
         element = arr[i];
         position = i - 1;
