@@ -6,11 +6,11 @@ void insertion_Sorting(int arr[], int size)
     int element;
     int position;
     int j;
-    for (int i = 1; i < size; i++)
+    for (int i = 1; i < size ; i++)
     {
         element = arr[i];
         position = i - 1;
-        for (j = position; j > -1; j--)
+        for (j = position; j > -1; j--) // for doing the shifting according to each number of pass.
         {
             if (arr[j] < element)
             { // insertion sorting decending condition.
