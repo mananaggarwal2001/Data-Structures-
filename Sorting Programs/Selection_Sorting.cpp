@@ -18,30 +18,28 @@ void display(int arr[], int size)
 }
 void Selection_Sort(int Array[], int size)
 {
-    int element,index_of_min;
+    int element, index_of_min;
     int temp;
     int count;
-    for (int i = 0; i < size-1; i++)
+    for (int i = 0; i < size - 1; i++) // for number of the passes involve in the process of selection sort.
     {
-        cout<<"For Pass :"<<i+1<<endl;
-        index_of_min= i;
-        element=Array[i];
-        for (int j = i+1; j < size; j++)
+        cout << "For Pass : " << i + 1 << endl;
+        index_of_min = i;
+        element = Array[i];
+        for (int j = i + 1; j < size; j++)
         {
-            if (Array[j]<Array[index_of_min])
+            if (Array[j] < Array[index_of_min])
             {
-                index_of_min=j;
+                index_of_min = j;
             }
-
         }
 
-        // swapping the positions of the elements.
+        // swapping the positions of the elements of the A[i] and A[Index_of_Min].
         temp = Array[index_of_min];
-        Array[index_of_min]= Array[i];
-        Array[i]=temp;
-        display(Array,size);
-        cout<<endl;
-        cout<<endl;
+        Array[index_of_min] = Array[i];
+        Array[i] = temp;
+        display(Array, size);
+        cout << endl;
     }
 }
 int main()
@@ -59,8 +57,9 @@ int main()
     }
 
     cout << "Unsorted Element are: " << endl;
-    display(arr,size);
-    cout<<endl;
+    display(arr, size);
+    cout << endl;
+    cout << endl;
     Selection_Sort(arr, size);
     cout << endl;
     cout << "Sorted Element are : " << endl;
