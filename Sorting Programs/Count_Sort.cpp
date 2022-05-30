@@ -44,13 +44,14 @@ void count_sort(int Array[], int size)
     }
     while (j < size)
     {
-        while (k != Array[j])
+        while (k != Array[j]) // for finding the index postiion in the new Array and increament the value in that index postion by 1.
         {
             k++;
         }
         count_sort_Array[k]++;
         j++;
-        k = 0;
+        k = 0; // by resetting the value we can find the index position in the given new array
+        // and increament  the value in the given new array by 1.
     }
 
     while (l < (max_size_element + 1))
@@ -63,14 +64,13 @@ void count_sort(int Array[], int size)
         {
             while (count_sort_Array[l] > 0)
             {
-                Array[m]=l;
+                Array[m] = l;
                 m++;
                 count_sort_Array[l]--;
             }
             l++;
         }
     }
-
 }
 int main()
 {
@@ -84,8 +84,8 @@ int main()
         cin >> array[i];
     }
     count_sort(array, size);
-    cout<<"Sorted Array is: ";
-    PrintArray(array,size);
+    cout << "Sorted Array is: ";
+    PrintArray(array, size);
 
     return 0;
 }
