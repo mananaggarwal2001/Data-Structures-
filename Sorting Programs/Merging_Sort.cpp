@@ -40,11 +40,11 @@ void Merging(int Sub_Array1[], int Sub_Array2[], int CombinedArray[], int sub_si
 
     while (i < sub_size1)
     {
-        CombinedArray[count_1] = Sub_Array1[i];
+        CombinedArray[count_1] = Sub_Array1[i]; // copy all remaning elements to the resultant array etc.
         count_1++;
         i++;
     }
-    while (j < sub_size2)
+    while (j < sub_size2)                       // copy all remaning elements to  the resultant array etc.
     {
         CombinedArray[count_1] = Sub_Array2[j];
         count_1++;
