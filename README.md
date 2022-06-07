@@ -35,3 +35,9 @@
 
 ## Trees
 - [Representation of the binary Tree](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Binary%20Trees%20Representation%20%20in%20C%2B%2B/Linked_Representation_of_the_Binary_Tree.cpp)
+## Recursion Weak Problems
+- [Find the First and Last Occurance of a given Character in the String](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Find_the_first_and_last_occurance_of_String.cpp)
+- [Print Number Using Recursion in Decreasing Order](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/PrintNumber_using_recursion.cpp)
+- [Print Factorial Of Number Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_Factorial_of_number_using_recursion.cpp)
+- [Print Keypad Combination Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_Keypad_combination_using_recursion.cpp)
+- [Print Number Using Recursion Upto to the Given Number in Ascending Order](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_Number_using_recursion_from_5_to_1.cpp)
