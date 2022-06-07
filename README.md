@@ -45,3 +45,6 @@
 - [Print String in Reverse Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_String_in_reverse_using_recursion.cpp)
 - [Print Sum of First N Natural Number Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_Sum_First_N_natural_number_using_recursion.cpp)
 - [Print All the Subsiquences of the String Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_all_the_subsiquences_of_String.cpp)
+- [Print All the Unique Subsiquences of the String Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_all_the_unique_subsets_of_String.cpp)
+- [Print Fibonacci Series Till N Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_fibonacci_series_till_n_term.cpp)
+- [To Check If the Array is Sorted Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/To_Check_if_the_Array_is_Sorted_using_recursion.cpp)
