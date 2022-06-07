@@ -3,24 +3,30 @@ using namespace std;
 
 char ch;
 int supplimentryIndex = 0;
+int counter=0;
 void subsiquence_of_String(string str, int index, string newString)
 {
     // base condition 1.
     if (index == str.length())
     {
         cout<<newString<<endl;
+        cout<<endl;
         return;
     }
 
     // to be in the string
     subsiquence_of_String(str, index + 1, newString + str[index]); // doing the string concatenation of the given string.
-    // choice for coming for  the value of the given alphabet.
-    // to not be in the string
 
+    // choice for coming for  the value of the given alphabet.
+
+    // to not be in the string
     subsiquence_of_String(str, index + 1, newString);
+
     // we have not to put that character in the string
-    // two calls are going on the simuntanuesly for doing the recursion.
+    // two calls are going on the simuntanuesly for doing the recursion for 1 index etc.
     // choice for not coming of the value of the given alphabet.
+
+    // time Complexity of this Program is : O(2^n)
 }
 
 int main()
