@@ -35,3 +35,18 @@
 
 ## Trees
 - [Representation of the binary Tree](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Binary%20Trees%20Representation%20%20in%20C%2B%2B/Linked_Representation_of_the_Binary_Tree.cpp)
+## Recursion
+- [Find the First and Last Occurance of a given Character in the String](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Find_the_first_and_last_occurance_of_String.cpp)
+- [Print Number Using Recursion in Decreasing Order](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/PrintNumber_using_recursion.cpp)
+- [Print Factorial Of Number Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_Factorial_of_number_using_recursion.cpp)
+- [Print Keypad Combination Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_Keypad_combination_using_recursion.cpp)
+- [Print Number Using Recursion Upto to the Given Number in Ascending Order](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_Number_using_recursion_from_5_to_1.cpp)
+- [Print Power Of a Given Number Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_Pow_of_given_number_using_recursion.cpp)
+- [Print String in Reverse Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_String_in_reverse_using_recursion.cpp)
+- [Print Sum of First N Natural Number Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_Sum_First_N_natural_number_using_recursion.cpp)
+- [Print All the Subsiquences of the String Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_all_the_subsiquences_of_String.cpp)
+- [Print All the Unique Subsiquences of the String Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_all_the_unique_subsets_of_String.cpp)
+- [Print Fibonacci Series Till N Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_fibonacci_series_till_n_term.cpp)
+- [To Check If the Array is Sorted Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/To_Check_if_the_Array_is_Sorted_using_recursion.cpp)
+- [To Move all the Given Character at the end of the String](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/To_move_all_x_to_the_end_of_String.cpp)
+- [Tower of Hanoi](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Tower_of_Hanoi.cpp)
