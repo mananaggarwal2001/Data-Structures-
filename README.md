@@ -48,3 +48,5 @@
 - [Print All the Unique Subsiquences of the String Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_all_the_unique_subsets_of_String.cpp)
 - [Print Fibonacci Series Till N Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Print_fibonacci_series_till_n_term.cpp)
 - [To Check If the Array is Sorted Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/To_Check_if_the_Array_is_Sorted_using_recursion.cpp)
+- [To Move all the Given Character at the end of the String](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/To_move_all_x_to_the_end_of_String.cpp)
+- [Tower of Hanoi](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Tower_of_Hanoi.cpp)
