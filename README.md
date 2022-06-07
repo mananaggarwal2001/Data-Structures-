@@ -50,3 +50,5 @@
 - [To Check If the Array is Sorted Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/To_Check_if_the_Array_is_Sorted_using_recursion.cpp)
 - [To Move all the Given Character at the end of the String](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/To_move_all_x_to_the_end_of_String.cpp)
 - [Tower of Hanoi](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Tower_of_Hanoi.cpp)
+- [Sample Program For Post Order Traversal in Tree](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Recursion_Post_Order_Traversal.cpp)
+- [Sample Program For the Pre Order Traverssal in Tree](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Recursion_Pre_Order_Traversal.cpp)
