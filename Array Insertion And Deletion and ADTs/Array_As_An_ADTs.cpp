@@ -42,10 +42,9 @@ void ArrayClass::setVal(myArray *sampleArray)
 {
     for (int i = 0; i < sampleArray->used_size; i++)
     {
-        cout<<"Enter the element "<<i+1<<" :- ";
-        cin>> (sampleArray->ptr)[i];
+        cout << "Enter the element " << i + 1 << " :- ";
+        cin >> (sampleArray->ptr)[i];
     }
-
 }
 
 int main()
@@ -53,12 +52,12 @@ int main()
     myArray marks;
 
     ArrayClass A1(&marks, 10, 2); // constructor is working in this class case.
-                                    // & is used to send the address of that allocated memory.(address of operator)
-                                    // * is used to send the value on that given particular address etc. (value at operator)
+                                  // & is used to send the address of that allocated memory.(address of operator)
+                                  // * is used to send the value on that given particular address etc. (value at operator)
 
-    cout<<"We are running the set value Now"<<endl;
+    cout << "We are running the set value Now" << endl;
     A1.setVal(&marks); // used for setting the value.
-    cout<<"We are running the Show Now"<<endl;
+    cout << "We are running the Show Now" << endl;
     A1.show(&marks); // used for showing the value.
     return 0;
 }
