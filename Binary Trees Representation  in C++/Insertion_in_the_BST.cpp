@@ -17,6 +17,8 @@ node *createnode(int number) // for creating the node
     return root;
 }
 
+
+
 void postOrderTraversal(node *temp)
 {
     if (temp != NULL)
