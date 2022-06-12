@@ -41,6 +41,8 @@
 - [Checking Whether the Given Tree is the Binary Search Tree or Not](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Binary%20Trees%20Representation%20%20in%20C%2B%2B/Checking_if_a_given_tree_is_the_binary_search_tree.cpp)
 - [Perform Search in the Binary Search Tree Using the Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Binary%20Trees%20Representation%20%20in%20C%2B%2B/Searching_in_the_BST_using_recursion.cpp)
 - [Perform Search in the Binary Search Tree Using the Iteration](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Binary%20Trees%20Representation%20%20in%20C%2B%2B/Searching_in_the_BST_using_iteration.cpp)
+- [Perform the Insertion in the Binary Search Tree](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Binary%20Trees%20Representation%20%20in%20C%2B%2B/Insertion_in_the_BST.cpp)
+- [Perform the deletion in the Binary Search Tree](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Binary%20Trees%20Representation%20%20in%20C%2B%2B/Deletion_in_the_Binary_Search_Tree.cpp)
 ## Recursion
 - [Find the First and Last Occurance of a given Character in the String](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Find_the_first_and_last_occurance_of_String.cpp)
 - [Print Number Using Recursion in Decreasing Order](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/PrintNumber_using_recursion.cpp)
