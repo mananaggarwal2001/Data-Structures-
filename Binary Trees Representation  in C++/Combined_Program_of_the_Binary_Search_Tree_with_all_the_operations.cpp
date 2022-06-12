@@ -22,8 +22,8 @@ public:
     void In_order_traversal(node *root);                    // done
     void Pre_Order_traversal(node *root);                   // done
     void Search_operation_in_BST(node *root, int value);    // done
-    void insertion_in_the_BST(node *root, int value);
-    node *Deletion_in_the_BST(node *root, int value);
+    void insertion_in_the_BST(node *root, int value);       // done
+    node *Deletion_in_the_BST(node *root, int value);       // done
 };
 
 node *tree_class::inOrderPrev(node *root)
