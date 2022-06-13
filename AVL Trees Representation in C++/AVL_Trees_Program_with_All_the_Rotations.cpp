@@ -44,7 +44,7 @@ node *rightRotation(node *y)
 
     cout << "    y       " << endl;
     cout << "  // \\       " << endl;
-    cout << "  x   T3   We have to Rotate this Tree to the right in Left Rotation." << endl;
+    cout << "  x   T3   We have to Rotate this Tree to the right in right Rotation." << endl;
     cout << "// \\         " << endl;
     cout << "T1  T2         " << endl;
     node *x = y->left;   // Intializing the X Variable to the left Side of the Y as in the given structure.
@@ -69,7 +69,7 @@ node *LeftRotation(node *x)
 
     cout << "    x       " << endl;
     cout << "  // \\       " << endl;
-    cout << "  T1  y   We have to Rotate this Tree to the right in Left Rotation." << endl;
+    cout << "  T1  y   We have to Rotate this Tree to the left in Left Rotation." << endl;
     cout << "    // \\   " << endl;
     cout << "    T2  T3  " << endl;
     node *y = x->right; // Intializing the y variable to the right Side of the X variable.
