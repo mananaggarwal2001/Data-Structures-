@@ -44,6 +44,8 @@
 - [Perform the Insertion in the Binary Search Tree](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Binary%20Trees%20Representation%20%20in%20C%2B%2B/Insertion_in_the_BST.cpp)
 - [Perform the deletion in the Binary Search Tree](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Binary%20Trees%20Representation%20%20in%20C%2B%2B/Deletion_in_the_Binary_Search_Tree.cpp)
 - [Combined Program of all the operations which are Performed on the Binary Search Tree](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Binary%20Trees%20Representation%20%20in%20C%2B%2B/Combined_Program_of_the_Binary_Search_Tree_with_all_the_operations.cpp)
+## AVL Trees
+- [AVL Trees With all the Rotations](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/AVL%20Trees%20Representation%20in%20C%2B%2B/AVL_Trees_Program_with_All_the_Rotations.cpp)
 ## Recursion
 - [Find the First and Last Occurance of a given Character in the String](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/Find_the_first_and_last_occurance_of_String.cpp)
 - [Print Number Using Recursion in Decreasing Order](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/C%2B%2B%20Programming%20Weak%20concepts/Recursion%20Problems/PrintNumber_using_recursion.cpp)
