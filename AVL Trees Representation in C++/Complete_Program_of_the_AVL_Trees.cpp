@@ -50,16 +50,16 @@ node *Avl_class::rightRotation(node *y)
     x->height = maximumheight(getHeight(x->left), getHeight(x->right)) + 1; // for finding the change in height after the rotation is performed.
     y->height = maximumheight(getHeight(y->left), getHeight(y->right)) + 1;
 
-    return x; // After the rotation the root node will be change to x node .
+    return x; // After the rotation the root node will be change to x node thus we will return .
 }
 
 node *Avl_class::leftRotation(node *x)
 {
-    // cout << "    x       " << endl;
-    // cout << "  // \\       " << endl;
-    // cout << "  T1  y   We have to Rotate this Tree to the right in Left Rotation." << endl;
-    // cout << "    // \\   " << endl;
-    // cout << "    T2  T3  " << endl;
+    cout << "    x       " << endl;
+    cout << "  // \\       " << endl;
+    cout << "  T1  y   We have to Rotate this Tree to the right in Left Rotation." << endl;
+    cout << "    // \\   " << endl;
+    cout << "    T2  T3  " << endl;
     // before rotation senario the value will be.
     node *y = x->right; // As in the given Diagram.
     node *T2 = y->left; // As in the given Diagram.
@@ -96,24 +96,24 @@ node *Avl_class::insertion_In_AVL(node *root, int value)
     // LL rotation Case.
     if (balance_factor > 1 && root->left->data > value)
     {
-        return leftRotation(root);
+        root = leftRotation(root);
     }
     // RR rotation case.
     if (balance_factor < -1 && root->right->data < value)
     {
-        return rightRotation(root);
+        root = rightRotation(root);
     }
     // LR rotation case.
     if (balance_factor > 1 && root->left->data < value)
     {
         root->left = leftRotation(root->left);
-        return rightRotation(root);
+        root = rightRotation(root);
     }
     // RL rotation case.
     if (balance_factor < -1 && root->right->data > value)
     {
         root->right = rightRotation(root->right);
-        return leftRotation(root);
+        root = leftRotation(root);
     }
 
     return root;
@@ -208,17 +208,17 @@ int main()
         }
         case 3:
         {
-            /* code */
+            obj.Post_Order_Traversal(rootNode);
             break;
         }
         case 4:
         {
-            /* code */
+            obj.In_Order_Traversal(rootNode);
             break;
         }
         case 5:
         {
-            /* code */
+
             break;
         }
 
