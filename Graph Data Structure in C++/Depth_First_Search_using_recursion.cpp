@@ -21,7 +21,7 @@ void DFS(int value) // DFS By default it implement the stack data type we can ru
         {
             DFS(i); // recursion is used etc.
         }
-    }
+    } // memory stack is made while using the recursion etc.
 }
 int main()
 {
