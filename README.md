@@ -44,6 +44,10 @@
 - [Perform the Insertion in the Binary Search Tree](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Binary%20Trees%20Representation%20%20in%20C%2B%2B/Insertion_in_the_BST.cpp)
 - [Perform the deletion in the Binary Search Tree](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Binary%20Trees%20Representation%20%20in%20C%2B%2B/Deletion_in_the_Binary_Search_Tree.cpp)
 - [Combined Program of all the operations which are Performed on the Binary Search Tree](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Binary%20Trees%20Representation%20%20in%20C%2B%2B/Combined_Program_of_the_Binary_Search_Tree_with_all_the_operations.cpp)
+## Graphs
+- [Depth First Search Algorithm](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Graph%20Data%20Structure%20in%20C%2B%2B/Depth_First_Search.cpp)
+- [Depth First Search Algorithm Using Recursion](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Graph%20Data%20Structure%20in%20C%2B%2B/Depth_First_Search_using_recursion.cpp)
+- [Breadth First Search Algorithm](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/Graph%20Data%20Structure%20in%20C%2B%2B/Breadth_First_search.cpp)
 ## AVL Trees
 - [AVL Trees With all the Rotations](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/AVL%20Trees%20Representation%20in%20C%2B%2B/AVL_Trees_Program_with_All_the_Rotations.cpp)
 - [Complete Program of the AVL Trees](https://github.com/mananaggarwal2001/Data-Structures-/blob/main/AVL%20Trees%20Representation%20in%20C%2B%2B/Complete_Program_of_the_AVL_Trees.cpp)
